@@ -35,6 +35,9 @@ a {
 }
 
 /* Navmenu Start */
+nav {
+  background-color: #fff;
+}
 
 .nav-menu {
   height: 100px;
@@ -66,19 +69,36 @@ a {
 
 .menu i {
   font-size: 30px;
+  padding: 15px;
 }
 
 .menu .menu-item {
   position: absolute;
-  top: 66px;
-  right: -12px;
-  width: 100vw;
+  top: 50px;
+  right: 0;
+  width: calc(100vw - 24px);
+  padding: 8px 10px;
   background-color: var(--bg-color);
   display: none;
+  z-index: 999;
 }
 
-.menu i:hover + .menu-item {
+.menu:hover .menu-item {
   display: block;
+}
+
+.menu .menu-item li {
+  margin: 8px 0;
+}
+
+.menu .menu-item li:last-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu .menu-item li i {
+  font-size: 24px;
+  cursor: pointer;
 }
 
 .menu .menu-item li a {
