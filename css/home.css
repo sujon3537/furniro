@@ -83,23 +83,6 @@
   font-size: 16px;
   color: #333;
 }
-
-.test {
-  width: 100%;
-  height: 200px;
-  background-image: url("../images/hero-image.png");
-  background-size: contain;
-}
-.box1 {
-  width: 100%;
-  height: 180px;
-  background-color: rgba(255, 0, 0, 0.363);
-}
-.box2 {
-  width: 100%;
-  height: 280px;
-  background-color: rgba(0, 128, 0, 0.39);
-}
 /* Range End */
 /* Product Start */
 .product {
@@ -113,11 +96,12 @@
   margin: 24px 0;
 }
 
-.box {
+.products .box {
   position: relative;
+  height: 552px;
 }
 
-.box .tag {
+.products .box .tag {
   width: 48px;
   height: 48px;
   border-radius: 50%;
@@ -140,27 +124,86 @@
   background-color: #e97171;
 }
 
-.box-img {
+.products .box .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.products .box:hover .overlay {
+  opacity: 1;
+}
+
+.products .box .overlay .actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 24px;
+}
+
+.products .box .overlay .actions button {
+  padding: 18px 28px;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--primary-color);
+  background-color: #fff;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  border-radius: 0;
+}
+
+.products .box .overlay .actions button:hover {
+  color: #fff;
+  background-color: var(--primary-color);
+}
+
+.products .box .overlay .actions div {
+  display: flex;
+  column-gap: 30px;
+}
+
+.products .box .overlay .actions span {
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.products .box .overlay .actions span i {
+  color: #fff;
+  font-size: 14px;
+  margin-right: 8px;
+}
+
+.products .box-img {
   height: 410px;
 }
-.box-img img {
+.products .box-img img {
   width: 100%;
   height: 100%;
 }
 
-.box-content {
+.products .box-content {
   background-color: #f4f5f7;
   padding: 20px;
 }
 
-.box-content .product-title {
+.products .box-content .product-title {
   font-weight: 600;
   font-size: 24px;
   color: #3a3a3a;
   text-transform: capitalize;
 }
 
-.box-content .product-subtitle {
+.products .box-content .product-subtitle {
   font-weight: 500;
   font-size: 16;
   text-transform: capitalize;
@@ -168,17 +211,17 @@
   margin: 8px 0;
 }
 
-.box-content .price {
+.products .box-content .price {
   display: flex;
   justify-content: space-between;
 }
 
-.box-content .discount-price {
+.products .box-content .discount-price {
   font-weight: 500;
   font-size: 16;
   color: #3a3a3a;
 }
-.box-content .actual-price {
+.products .box-content .actual-price {
   font-weight: 400;
   font-size: 16;
   color: #b0b0b0;
