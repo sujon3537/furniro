@@ -1,10 +1,11 @@
+/* Hero Start */
 .hero {
   background-image: url(/images/hero-image.png);
-  background-size: contain;
+  background-size: 100%;
+  background-position: bottom;
   background-repeat: no-repeat;
   width: 100%;
   height: 180px;
-  background-color: red;
   position: relative;
 }
 
@@ -26,7 +27,7 @@
   color: #333;
 }
 
-.hero-content h2 {
+.hero-content .hero-heading {
   font-weight: 700;
   font-size: 36px;
   color: var(--primary-color);
@@ -34,6 +35,40 @@
 
 .hero-content .description {
   font-weight: 500;
+  font-size: 16px;
+  color: #333;
+}
+/* Hero End */
+/* Range Start */
+.range {
+  margin-top: 285px;
+}
+
+.range .section-title {
+  text-align: center;
+}
+
+.range .section-subtitle {
+  font-size: 14px;
+  text-align: center;
+  color: #666666;
+}
+
+.range .img-boxes {
+  display: flex;
+  flex-direction: column;
+  row-gap: 18px;
+  margin-top: 24px;
+}
+
+.range .img-boxes .box img {
+  width: 100%;
+}
+
+.range .img-boxes .box h3 {
+  /* margin-top: 6px; */
+  text-align: center;
+  font-weight: 600;
   font-size: 16px;
   color: #333;
 }

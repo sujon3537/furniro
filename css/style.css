@@ -22,6 +22,13 @@ a {
   text-decoration: none;
 }
 
+.section-title {
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: capitalize;
+  color: #3a3a3a;
+}
+
 .container {
   max-width: 100%;
   margin: 0 auto;
