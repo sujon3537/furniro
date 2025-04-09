@@ -198,4 +198,28 @@ nav {
   border-top: 1px solid #d4d4d4;
   padding: 12px 0;
 }
+
+@media screen and (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 20px;
+  }
+  .footer .furniro {
+    width: 30%;
+  }
+  .footer .footer-menu {
+    width: 40%;
+    justify-content: space-evenly;
+  }
+  .footer .newsletter {
+    width: 20%;
+  }
+  .newsletter form button {
+    margin-left: 0;
+  }
+  .footer .copyright {
+    width: 100%;
+  }
+}
 /* Footer End */

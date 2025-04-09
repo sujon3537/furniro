@@ -272,6 +272,7 @@
 /* Product End */
 
 /*  Inspiration section Start*/
+
 .inspiration-area {
   background-color: #fcf8f3;
   padding: 18px 0;
@@ -389,6 +390,25 @@
   font-size: 24px;
 }
 
+@media screen and (min-width: 768px) {
+  .inspiration {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+  }
+  .inspiration-area .content {
+    width: 100%;
+    text-align: center;
+  }
+  .inspiration-area .content .section-title,
+  .inspiration-area .content p {
+    text-align: center;
+  }
+  .inspiration-area .inspiration-slider {
+    height: 417px;
+  }
+}
+
 /*  Inspiration section End*/
 
 /* Furniture sectin start */
@@ -410,13 +430,44 @@
 }
 
 .image-collage .one,
-.two,
-.three {
+.image-collage .two,
+.image-collage .three {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   row-gap: 8px;
   flex-wrap: wrap;
   margin-top: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .image-collage .one .img1 {
+    order: 3;
+  }
+  .image-collage .one .img2 {
+    order: 2;
+  }
+  .image-collage .one .img3 {
+    order: 1;
+  }
+  .image-collage .one .img4 {
+    order: 4;
+  }
+  .image-collage .two img {
+    width: 80%;
+    margin: 10px 0;
+  }
+  .image-collage .three .img6 {
+    order: 3;
+  }
+  .image-collage .three .img7 {
+    order: 4;
+  }
+  .image-collage .three .img8 {
+    order: 3;
+  }
+  .image-collage .three .img9 {
+    order: 1;
+  }
 }
 /* Furniture sectin End */
