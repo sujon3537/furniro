@@ -114,3 +114,88 @@ nav {
 }
 
 /* Navmenu End */
+
+/* Footer Start */
+.footer-area {
+  border-top: 1px solid #d4d4d4;
+  margin-top: 24px;
+  padding-top: 14px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 18px;
+}
+
+.furniro .logo {
+  font-weight: 700;
+  font-size: 24px;
+  color: #000;
+}
+
+.furniro .address {
+  font-size: 16px;
+  color: #9f9f9f;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-menu h3,
+.right-menu h3,
+.newsletter h3 {
+  font-weight: 500;
+  font-size: 16px;
+  color: #9f9f9f;
+  margin-bottom: 8px;
+}
+
+.footer-menu ul li {
+  margin: 8px 0;
+}
+
+.footer-menu ul li a {
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+}
+
+.newsletter form input {
+  outline: 0;
+  border: 0;
+  padding: 5px 1px;
+  border-bottom: 1px solid #000;
+}
+.newsletter form input::placeholder {
+  font-size: 14px;
+  color: #9f9f9f;
+}
+
+.newsletter form button {
+  padding-bottom: 5px;
+  border: 0;
+  border-bottom: 1px solid #000;
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #000;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.newsletter form button:hover {
+  color: #333;
+}
+
+.footer .copyright {
+  font-size: 14px;
+  color: #000;
+  text-align: center;
+  border-top: 1px solid #d4d4d4;
+  padding: 12px 0;
+}
+/* Footer End */

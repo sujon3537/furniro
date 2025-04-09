@@ -349,3 +349,32 @@
 }
 
 /*  Inspiration section End*/
+
+/* Furniture sectin start */
+.furniture {
+  margin-top: 24px;
+}
+
+.furniture .subtitle {
+  font-weight: 600;
+  font-size: 16px;
+  color: #616161;
+  text-align: center;
+}
+
+.image-collage {
+  width: 100%;
+  margin-top: 18px;
+}
+
+.image-collage .one,
+.two,
+.three {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  row-gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+/* Furniture sectin End */
