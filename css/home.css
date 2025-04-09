@@ -229,3 +229,123 @@
 }
 
 /* Product End */
+
+/*  Inspiration section Start*/
+.inspiration-area {
+  background-color: #fcf8f3;
+  padding: 18px 0;
+}
+
+.inspiration-area .content {
+  margin-bottom: 18px;
+}
+
+.inspiration-area .content .section-title {
+  text-align: left;
+}
+
+.inspiration-area .content p {
+  font-weight: 500;
+  font-size: 16px;
+  color: #616161;
+  margin: 8px 0;
+}
+
+.inspiration-area .content a {
+  text-transform: capitalize;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  display: inline-block;
+  padding: 17px 40px;
+  margin-top: 10px;
+}
+
+.inspiration-area .inspiration-img {
+  height: 484px;
+  margin-bottom: 18px;
+  position: relative;
+}
+
+.inspiration-area .inspiration-img img {
+  width: 100%;
+  height: 100%;
+}
+.inspiration-area .inspiration-img .text {
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+  padding: 18px 14px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.inspiration-area .inspiration-img .text p {
+  font-weight: 500;
+  color: #616161;
+  font-size: 16px;
+}
+
+.inspiration-area .inspiration-img .text h3 {
+  font-weight: 600;
+  font-size: 28px;
+  color: #3a3a3a;
+}
+
+.inspiration-area .inspiration-img .text span {
+  text-decoration: line-through;
+}
+
+.inspiration-area .inspiration-img .text .arrow {
+  background-color: var(--primary-color);
+  padding: 8px 14px;
+  position: absolute;
+  left: 100%;
+  bottom: 0;
+  color: #fff;
+}
+
+.inspiration-area .inspiration-slider {
+  display: flex;
+  column-gap: 24px;
+  height: 358px;
+  position: relative;
+}
+.inspiration-area .inspiration-slider .dots {
+  position: absolute;
+  bottom: -28px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.inspiration-area .inspiration-slider .dots i {
+  color: #d8d8d8;
+  font-size: 7px;
+}
+
+.inspiration-area .inspiration-slider .dots .active {
+  font-size: 18px;
+  color: var(--primary-color);
+}
+.inspiration-area .inspiration-slider .right-arrow {
+  background-color: #fff;
+  color: var(--primary-color);
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 12%;
+  bottom: 30%;
+  box-shadow: 1px 1px 16px rgba(0, 0, 0, 0.3);
+}
+
+.inspiration-area .inspiration-slider .right-arrow i {
+  font-size: 24px;
+}
+
+/*  Inspiration section End*/
