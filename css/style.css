@@ -69,7 +69,6 @@ nav {
 }
 
 .logo span {
-  /* display: inline-block; */
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 40px;
@@ -104,18 +103,50 @@ nav {
   margin: 8px 0;
 }
 
-.menu .menu-item li:last-child {
+.menu .menu-item li ul {
   display: flex;
   justify-content: space-between;
 }
 
-.menu .menu-item li i {
+.menu .menu-item li ul li i {
   font-size: 24px;
   cursor: pointer;
 }
 
 .menu .menu-item li a {
   color: #000;
+}
+
+.desktop-menu-icon {
+  display: none;
+}
+
+@media screen and (min-width: 1140px) {
+  .menu {
+    position: static;
+  }
+  .menu .fa-bars {
+    display: none;
+  }
+  .menu .menu-item,
+  .menu:hover .menu-item {
+    position: static;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    width: auto;
+  }
+  .menu .menu-item li:last-child {
+    display: none;
+  }
+  .desktop-menu-icon {
+    display: flex;
+    column-gap: 45px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #000;
+  }
 }
 
 /* Navmenu End */
